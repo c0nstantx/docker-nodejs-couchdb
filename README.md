@@ -1,1 +1,1 @@
-NodeJS 0.10 with CouchDB 1.6.1
+NodeJS 0.12 with CouchDB 1.6.1

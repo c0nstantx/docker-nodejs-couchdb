@@ -7,14 +7,9 @@ FROM rocketgraph/couchdb
 
 MAINTAINER Konstantinos Christofilos <kostas.christofilos@rocketgraph.com>
 
-#Install NodeJS
+#Install NodeJS 0.12
+RUN curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 RUN apt-get -y install nodejs
-
-#Link nodejs to node
-RUN ln -s /usr/bin/nodejs /usr/bin/node
-
-#Install npm
-RUN apt-get -y install npm
 
 #Install node-supervisor
 RUN npm install supervisor -g
