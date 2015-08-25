@@ -11,8 +11,8 @@ MAINTAINER Konstantinos Christofilos <kostas.christofilos@rocketgraph.com>
 RUN curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 RUN apt-get -y install nodejs
 
-#Install node-supervisor
-RUN npm install supervisor -g
+#Install nodemon
+RUN npm install nodemon -g
 
 #Setup supervisord
 ADD ./supervisord.conf /etc/supervisor/supervisord.conf
